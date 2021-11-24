@@ -66,5 +66,16 @@ public class EmployeeSQL implements Serializable {
     public void setWorking(List<ProjectSQL> working) {
         this.working = working;
     }
+    @Override
+    public boolean equals(Object obj)
+    {
+        EmployeeSQL employee = (EmployeeSQL) obj;
+        return (employee.id == this.id);
+    }
 
+    @Override
+    public int hashCode()
+    {
+        return (int) this.id;
+    }
 }
