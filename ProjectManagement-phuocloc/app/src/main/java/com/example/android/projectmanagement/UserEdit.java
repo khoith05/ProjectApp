@@ -94,6 +94,7 @@ public class UserEdit extends AppCompatActivity {
             public void onClick(View v) {
                 avatar.setImageBitmap(null);
                 avatarByte=null;
+                avatar.setImageResource(R.drawable.defaultavatar);
             }
         });
     }

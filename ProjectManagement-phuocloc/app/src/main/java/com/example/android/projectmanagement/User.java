@@ -83,6 +83,8 @@ public class User extends Fragment {
         if (usersql.img!=null) {
             Bitmap bitmap = BitmapFactory.decodeByteArray(usersql.img,0,usersql.img.length);
             avatar.setImageBitmap(bitmap);
+        }else{
+            avatar.setImageResource(R.drawable.defaultavatar);
         }
 
         return view;
@@ -98,8 +100,8 @@ public class User extends Fragment {
         emailView.setText(usersql.email);
         addressView.setText(usersql.address);
         if (usersql.img!=null) {
-        Bitmap bitmap = BitmapFactory.decodeByteArray(usersql.img,0,usersql.img.length);
-        avatar.setImageBitmap(bitmap);
+            Bitmap bitmap = BitmapFactory.decodeByteArray(usersql.img,0,usersql.img.length);
+            avatar.setImageBitmap(bitmap);
         }
     }
 
