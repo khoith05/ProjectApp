@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <item
+        android:id="@+id/ProjectDetail"
+        android:title="Thông tin chi tiết"
+        />
+    <item
+        android:id="@+id/ProjectTask"
+        android:title="Task"
+        />
+    <item
+        android:id="@+id/ProjectGantt"
+        android:title="Phân tích dự án"
+        />
+    <item
+        android:id="@+id/ProjectSum"
+        android:title="Tổng kết dự án"
+        />
+
+</menu>

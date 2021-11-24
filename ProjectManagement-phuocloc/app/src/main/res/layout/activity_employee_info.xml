@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmployeeInfo">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/Eiappbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/InfoEmployeeToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/design_default_color_primary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="parent"
+                app:titleTextColor="#ffff">
+
+                <TextView
+                    android:id="@+id/InfoEmployeeTitle"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Thông tin nhân viên"
+                    android:textColor="#ffffff" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <ImageView
+                android:id="@+id/BackEmployee"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:contentDescription="backEmployee"
+                android:focusable="auto"
+                android:minWidth="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="250dp">
+
+                <ImageView
+                    android:id="@+id/EmployeeInfoAvatar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/nameEI"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Le Văn hải" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:id="@+id/phoneTitleEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Số điện thoại:" />
+
+                <TextView
+                    android:id="@+id/phoneEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@id/phoneTitleEI"
+                    android:text="0923234324" />
+
+                <TextView
+                    android:id="@+id/emailTitleEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phoneEI"
+                    android:layout_marginTop="20dp"
+                    android:text="Email:" />
+
+                <TextView
+                    android:id="@+id/emailEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phoneTitleEI"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/emailTitleEI"
+                    android:text="VanA@gmail.com" />
+
+                <TextView
+                    android:id="@+id/jobTitleEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emailEI"
+                    android:layout_marginTop="20dp"
+                    android:text="Công việc:" />
+
+                <TextView
+                    android:id="@+id/jobEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emailEI"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/jobTitleEI"
+                    android:text="Thiết kế UI" />
+
+                <TextView
+                    android:id="@+id/addressTitleEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobEI"
+                    android:layout_marginTop="20dp"
+                    android:text="Địa chỉ:" />
+
+                <TextView
+                    android:id="@+id/addressEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobEI"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/addressTitleEI"
+                    android:text="Hồ Chí Minh" />
+
+                <TextView
+                    android:id="@+id/salaryTitleEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addressEI"
+                    android:layout_marginTop="20dp"
+                    android:text="Lương:" />
+
+                <TextView
+                    android:id="@+id/salaryEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addressEI"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/salaryTitleEI"
+                    android:text="100" />
+
+                <TextView
+                    android:id="@+id/joinedTitleEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/salaryTitleEI"
+                    android:layout_marginTop="20dp"
+                    android:text="Dự án đã tham gia:" />
+
+                <TextView
+                    android:id="@+id/joinedContentEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/joinedTitleEI"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Dự án 1 \nDự án 2" />
+
+                <TextView
+                    android:id="@+id/joiningTitleEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/joinedContentEI"
+                    android:layout_marginTop="20dp"
+                    android:text="Dự án đang tham gia:" />
+
+                <TextView
+                    android:id="@+id/joiningContentEI"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/joiningTitleEI"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="8sp"
+                    android:text="Dự án 3 \nDự án 4" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
