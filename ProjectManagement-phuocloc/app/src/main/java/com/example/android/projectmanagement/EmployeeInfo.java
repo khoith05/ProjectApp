@@ -29,8 +29,11 @@ public class EmployeeInfo extends AppCompatActivity {
         DatabaseHelper db= new DatabaseHelper(this);
         EmployeeSQL employeeSQL= (EmployeeSQL) db.getEmpoloyee(id);
         ImageView avatar =findViewById(R.id.EmployeeInfoAvatar);
-        Bitmap bitmap = BitmapFactory.decodeByteArray(employeeSQL.img,0 ,employeeSQL.img.length);
-        avatar.setImageBitmap(bitmap);
+        if (employeeSQL.img !=null){
+            Bitmap bitmap = BitmapFactory.decodeByteArray(employeeSQL.img,0 ,employeeSQL.img.length);
+            avatar.setImageBitmap(bitmap);
+        }
+
 
         TextView textView;
         textView =findViewById(R.id.nameEI);
