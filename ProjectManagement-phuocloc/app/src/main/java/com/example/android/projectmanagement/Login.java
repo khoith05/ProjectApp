@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.android.projectmanagement.database.DatabaseHelper;
+
 public class Login extends AppCompatActivity {
     EditText edtEmail, edtPass;
     Button btnLogin;

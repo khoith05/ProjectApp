@@ -11,6 +11,7 @@ public class UserSQL implements Serializable {
     public static final String COLUMN_ADDRESS="Address";
     public static final String COLUMN_IMG="img";
 
+
     public static final long id=1233536545;
     public String name;
     public String phone;

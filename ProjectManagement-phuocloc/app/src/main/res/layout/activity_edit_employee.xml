@@ -136,7 +136,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/EmployeeName"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -152,7 +153,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/EmployeePhone"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="phone" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -168,7 +170,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/EmployeeEmail"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -184,7 +187,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/EmployeeJob"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -216,7 +220,8 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/EmployeeSalary"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
 
             </com.google.android.material.textfield.TextInputLayout>
 

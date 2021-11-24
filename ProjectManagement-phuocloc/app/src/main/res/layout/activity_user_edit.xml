@@ -136,8 +136,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/UserName"
                     android:layout_width="match_parent"
-                    android:text="Lê Văn Hải"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:text="Lê Văn Hải" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -153,8 +154,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/UserPhone"
                     android:layout_width="match_parent"
-                    android:text="0334525878"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:text="0334525878" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -170,8 +172,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/UserEmail"
                     android:layout_width="match_parent"
-                    android:text="haivan@gmail.com"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:text="haivan@gmail.com" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
